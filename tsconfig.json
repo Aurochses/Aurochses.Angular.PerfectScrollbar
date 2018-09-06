@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@aurochses/angular-perfect-scrollbar": [
+        "dist/aurochses/angular-perfect-scrollbar"
+      ],
+      "@aurochses/angular-perfect-scrollbar/*": [
+        "dist/aurochses/angular-perfect-scrollbar/*"
+      ]
+    }
   }
 }

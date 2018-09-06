@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "@aurochses/angular-perfect-scrollbar": {
+      "root": "projects/aurochses/angular-perfect-scrollbar",
+      "sourceRoot": "projects/aurochses/angular-perfect-scrollbar/src",
+      "projectType": "library",
+      "prefix": "aur",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/aurochses/angular-perfect-scrollbar/tsconfig.lib.json",
+            "project": "projects/aurochses/angular-perfect-scrollbar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/aurochses/angular-perfect-scrollbar/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/aurochses/angular-perfect-scrollbar/src/test.ts",
+            "tsConfig": "projects/aurochses/angular-perfect-scrollbar/tsconfig.spec.json",
+            "karmaConfig": "projects/aurochses/angular-perfect-scrollbar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/aurochses/angular-perfect-scrollbar/tsconfig.lib.json",
+              "projects/aurochses/angular-perfect-scrollbar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demo"
