@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@aurochses/angular-perfect-scrollbar": [
-        "dist/aurochses/angular-perfect-scrollbar"
+        //"dist/aurochses/angular-perfect-scrollbar"
+        "projects/aurochses/angular-perfect-scrollbar/src/public_api.ts" 
       ],
       "@aurochses/angular-perfect-scrollbar/*": [
         "dist/aurochses/angular-perfect-scrollbar/*"
