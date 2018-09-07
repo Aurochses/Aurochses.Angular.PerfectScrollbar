@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { PerfectScrollbarDirective } from './perfect-scrollbar.directive';
 
 @NgModule({
-  imports: [
-  ],
   declarations: [
     PerfectScrollbarDirective
+  ],
+  imports: [
   ],
   exports: [
     PerfectScrollbarDirective
